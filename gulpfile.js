@@ -12,7 +12,8 @@ global.$ = {
   gulp: require('gulp'),
   del: require('del'),
   browserSync: require('browser-sync').create(),
-  gp: require('gulp-load-plugins')()
+  gp: require('gulp-load-plugins')(),
+  merge: require('merge-stream')
 };
 
 $.path.task.forEach(function(taskPath) {
@@ -26,14 +27,16 @@ $.gulp.task('default', $.gulp.series(
     'pug',
     'js:foundation',
     'js:process',
-    'copy:image',
+    //'copy:image',
     'css:foundation',
     'sprite:svg',
-    'sprite'
-
+    'sprite',
+    'copy:files'
   ),
   $.gulp.parallel(
     'watch',
     'serve'
   )
-));
+)
+
+);
