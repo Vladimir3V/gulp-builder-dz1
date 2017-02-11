@@ -1,14 +1,8 @@
-# Учебная сборка Loftschool
+Author: Vakhrushev Vladimir
+2017/02/11
+This cite is my unfinished protfolio.
+I use build form Loftschool (https://github.com/loftschool/gulp-builder-dz1).
 
-> Сборка работает на gulp версии 4.0. 
-
-#### Для начала работы
-
-1. ```clone this repo```
-2. ```cd path/to/...```
-3. ```npm install gulpjs/gulp-cli -g```  
-> Установка последней версии Gulp CLI tools глобально (подробнее - [GitHub](https://github.com/gulpjs/gulp/blob/4.0/docs/getting-started.md) )
-
-4. ```npm install```
-6. ```run gulp``` 
+During next month I'm going to develop this cite.
+It will be amazing)
 
