@@ -1,5 +1,90 @@
+
+
+
+html,
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url("../img/backgounds/WelcomePageBg.png") no-repeat;
+  background-size: 100%;
+
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+ul {
+  list-style: none outside none;
+  padding: 0;
   margin: 0;
 }
 
-@import 'common/greating';
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.autorisationButton {
+  float: right;
+  width: 180px;
+  height: 46px;
+  background-color: yellow;
+  //display: flex;
+  //flex-direction: row-reverse;
+  //justify-content: flex-end;
+
+
+}
+
+.welcomForm {
+  text-align: center;
+  height: 400px;
+  width: 380px;
+  background-color: #F44336;
+    .userPicture {
+      margin-top: 40px;
+      margin-bottom: 25px;
+      width: 140px;
+      height: 140px;
+      background: sandybrown;
+    }
+    .info {
+      .userName {
+        font-size: 28px;
+        line-height: 34px;
+      }
+      .aboutSite {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      width: 144px;
+      height: 30px;
+      .socialList {
+        display: flex;
+        justify-content: space-between;
+        .socialItem{
+          width: 30px;
+          height: 30px;
+          background: green;
+        }
+      }
+    }
+}
+
+//@import 'common/greating';
