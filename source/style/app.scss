@@ -36,55 +36,60 @@ ul {
   align-items: center;
 }
 
-.autorisationButton {
-  float: right;
+.autorisation-button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
   width: 180px;
   height: 46px;
   background-color: yellow;
-  //display: flex;
-  //flex-direction: row-reverse;
-  //justify-content: flex-end;
+  text-align: center;
+  line-height: 46px;
 
 
 }
 
-.welcomForm {
+.block-welcome {
   text-align: center;
+  flex-wrap:wrap;
   height: 400px;
   width: 380px;
   background-color: #F44336;
-    .userPicture {
-      margin-top: 40px;
-      margin-bottom: 25px;
-      width: 140px;
-      height: 140px;
-      background: sandybrown;
-    }
-    .info {
-      .userName {
+  .user-information {
+      .user-information__picture {
+        margin-top: 40px;
+        margin-bottom: 25px;
+        width: 140px;
+        height: 140px;
+        background: sandybrown;
+      }
+      .user-information__name {
         font-size: 28px;
         line-height: 34px;
       }
-      .aboutSite {
+      .user-information__site {
         font-size: 16px;
         line-height: 24px;
       }
     }
-    .socials {
+  .social-list {
+      margin: 0 auto;
+      width: 130px;
       display: flex;
-      justify-content: center;
-      width: 144px;
-      height: 30px;
-      .socialList {
-        display: flex;
-        justify-content: space-between;
-        .socialItem{
-          width: 30px;
-          height: 30px;
-          background: green;
-        }
+      justify-content: space-between;
+      .social-list__item{
+        width: 30px;
+        height: 30px;
+        background: green;
       }
     }
+  .site-navigation-buttons {
+    display: flex;
+    justify-content: space-around;
+    .site-navigation-buttons__item {
+    }
+  }
+
 }
 
 //@import 'common/greating';

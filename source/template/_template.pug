@@ -26,22 +26,22 @@ html
   body
     wrapper.wrapper
         .container
-          a.autorisationButton Авторизация
-          .welcomForm
-            .aboutUser
-              img.userPicture
-              .info
-                .userName Владимир Вахрушев
-                .aboutSite Личный сайт разработчика
-              .socials
-                ul.socialList
-                  li.socialItem rr
-                  li.socialItem rr
-                  li.socialItem rr
-            //.threeButtons
-            //  a.button Мои работы
-            //  a.button Обо мне
-            //  a.button Блог
-
+          a.autorisation-button Авторизация
+          .block-welcome
+            .user-information
+              img.user-information__picture
+              .user-information__name Владимир Вахрушев
+              .user-information__site Личный сайт разработчика
+                ul.social-list
+                  li.social-list__item rr
+                  li.social-list__item rr
+                  li.social-list__item rr
+                ul.site-navigation-buttons
+                  li.site-navigation-buttons__item
+                    a.site-navigation-buttons__link Мои работы
+                  li.site-navigation-buttons__item
+                    a.site-navigation-buttons__link Обо мне
+                  li.site-navigation-buttons__item
+                    a.site-navigation-buttons__link Блог
 
     block content
