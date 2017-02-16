@@ -2,46 +2,105 @@ block variables
 
 doctype html
 html
-  head
-    meta(charset="utf-8")
-    title #{title}
-    meta(content="" name="author")
-    meta(content="" name="description")
-    meta(content="" name="keywords")
-    meta(content="width=device-width, initial-scale=1" name="viewport")
-    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        meta(content="" name="author")
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
 
-    //- favicon block start
-    //- favicon block end
+        //- favicon block start
+        //- favicon block end
 
-    link(rel='stylesheet' href='/assets/css/foundation.css')
-    link(rel='stylesheet' href='/assets/css/app.css')
-    script(src='/assets/js/foundation.js' defer)
-    script(src='/assets/js/app.js' defer)
+        link(rel='stylesheet' href='/assets/css/foundation.css')
+        link(rel='stylesheet' href='/assets/css/app.css')
+        script(src='/assets/js/foundation.js' defer)
+        script(src='/assets/js/app.js' defer)
 
-    <!--[if lt IE 9]>
-    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
-    <![endif]-->
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
 
-  body
-    wrapper.wrapper
-        .container
-          a.autorisation-button Авторизация
-          .block-welcome
-            .user-information
-              img.user-information__picture
-              .user-information__name Владимир Вахрушев
-              .user-information__site Личный сайт разработчика
-                ul.social-list
-                  li.social-list__item rr
-                  li.social-list__item rr
-                  li.social-list__item rr
-                ul.site-navigation-buttons
-                  li.site-navigation-buttons__item
-                    a.site-navigation-buttons__link Мои работы
-                  li.site-navigation-buttons__item
-                    a.site-navigation-buttons__link Обо мне
-                  li.site-navigation-buttons__item
-                    a.site-navigation-buttons__link Блог
+    body
+
+        //Welcome
+
+        //wrapper.wrapper
+        //    .container
+        //      a.autorisation-button Авторизация
+        //      .block-welcome
+        //        .user-information
+        //          img.user-information__picture
+        //          .user-information__name Владимир Вахрушев
+        //          .user-information__site Личный сайт разработчика
+        //            ul.social-list
+        //              li.social-list__item rr
+        //              li.social-list__item rr
+        //              li.social-list__item rr
+        //            ul.site-navigation-buttons
+        //              li.site-navigation-buttons__item
+        //                a.site-navigation-buttons__link Мои работы
+        //              li.site-navigation-buttons__item
+        //                a.site-navigation-buttons__link Обо мне
+        //              li.site-navigation-buttons__item
+        //                a.site-navigation-buttons__link Блог
+
+        //About
+
+
+    block title
+        | Портфолио
+
+    // prefix
+        l - layout
+        c - component
+
+    .wrapper
+        section.l-section.l-hero
+            ul.c-socials
+                li.c-socials__item
+                    a.c-socials__link
+
+            .c-hero__bg
+                .l-hero__container
+                    img.c-hero-title-pic
+                    .c-user
+                        .user-information
+                            img.user-information__picture
+                            .user-information__name Владимир Вахрушев
+                            .user-information__site Личный сайт разработчика
+            .l-arrow-down
+        section.l-section.l-about
+            .l-about__col.l-about__col_left
+                svg.c-about__triangle
+                    polygon(points="0,0 620,200 0,200")
+
+                .c-section-title Обо мне
+                .c-about
+                    .c-about__pic
+                    .c-block-title Кто я
+                    .c-block-text Интересуют мнения людей которые бросили emmet(и аналоги) ... jade можно использовать Emmet для быстрого набора кода. ... Как сделать многострочный некомпилируемый текст в аттрибутах тега в pug (jade)?.
+
+            .l-about__col.l-about__col_right
+                svg.c-about__triangle (height="200" with="620"
+                    polygon(points="620,0 0,200 620,200")
+                .l-skills
+                    .c-block-title
+                    .l-skills__text
+                        p
+                        p
+                        p
+                    ul.l-skills-group
+                        li.l-skills-group__item
+                            .c-skills-group__title Frontend
+                            ul.l-skills-list
+                                li.l-skills-list__item
+                                    .c-skill
+                                        svg.c-skill__circle
+                                        .c-skill__title
+            section.l-section.l-map
+
 
     block content
