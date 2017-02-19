@@ -1,0 +1,18 @@
+.c-block-title {
+  text-align: center;
+  font-size: 35px;
+  line-height: 41px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+
+.c-block-title:after {
+  margin: 0 auto;
+  margin-top: 20px;
+  content: "";
+  width: 90px;
+  display: block;
+  height: 6px;
+  background: black;
+}

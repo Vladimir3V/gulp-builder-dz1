@@ -1,0 +1,21 @@
+.l-hero {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-hero__bg {
+  top: 0;
+  @include centred(x);
+
+}
+
+.l-hero__container {
+  @include centred(y);
+  width: 100%;
+}
+
+
+.c-hero-title-pic {
+  @include centred();
+}

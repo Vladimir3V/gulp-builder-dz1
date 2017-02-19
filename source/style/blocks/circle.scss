@@ -1,0 +1,19 @@
+.c-skill__circle {
+  width: 100px;
+  height: 100px;
+  display: block;
+  fill: transparent;
+  stroke-width: 15;
+
+}
+
+
+.c-skill__circle-under {
+  stroke: #dfdcd5;
+}
+
+.c-skill__circle-above {
+  stroke: #3870d2;
+  stroke-dasharray: 122;
+
+}

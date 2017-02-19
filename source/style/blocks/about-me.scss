@@ -1,0 +1,28 @@
+.c-about-me {
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+
+.c-about-me__pic {
+  height: 450px;
+  width:  330px;
+
+}
+
+.c-block-me__title {
+  font-size: 35px;
+  height: 45px;
+  border-bottom: solid black;
+
+}
+
+.c-block-me__text {
+  padding-top: 20px;
+  width: 450px;
+
+}
+
+

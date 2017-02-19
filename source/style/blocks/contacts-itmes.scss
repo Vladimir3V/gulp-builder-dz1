@@ -1,0 +1,44 @@
+.c-contacts-items {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.c-contacts__cycle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #004cd1;
+  position: relative;
+  display: inline-block;
+  float: left;
+
+
+}
+
+.c-contacts-items {
+
+//display: flex;
+}
+
+.c-contacts-item {
+  height: 80px;
+  width: 49%;
+  display: inline-block;
+
+}
+
+.c-contacts-item__text {
+  line-height: 50px;
+  margin-left: 70px;
+}
+
+.c-contacts-item__icon {
+  @include centred();
+  width: 35px;
+  height: 25px;
+  fill: #ffffff;
+}
+
+.c-socials__icon:hover {
+  fill: #004cd1;
+}

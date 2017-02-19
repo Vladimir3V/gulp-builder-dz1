@@ -1,22 +1,3 @@
-//colours
-
-$white: #f2f0e8;
-$red: #f4f5f0;
-$fontcolor: #474b57;
-$tire: black;
-
-
-
-
-@import "helpers/mixins";
-
-@import "layouts/setups";
-//@import "layouts/fonts";
-
-@import "blocks/**/*.scss";
-
-
-
 html,
 body {
   margin: 0;

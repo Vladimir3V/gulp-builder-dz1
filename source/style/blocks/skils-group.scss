@@ -1,0 +1,28 @@
+.c-skills-group {
+  padding-left: 40px;
+}
+.c-skills-group__title {
+  font-size: 28px;
+  padding-bottom: 25px;
+}
+
+.c-skills-list__item {
+  display: inline-block;
+  margin-right:20px;
+  padding-bottom: 58px;
+
+}
+
+.c-skill {
+  position: relative;
+}
+
+.c-skill__title {
+  text-align: center;
+  position: absolute;
+  top: 42px;
+  left: 18px;
+  font-size: 12px;
+  width: 64px;
+  height: 30px;
+}

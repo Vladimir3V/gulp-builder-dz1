@@ -1,0 +1,22 @@
+.c-socials {
+  position: absolute;
+  top:20px;
+  left: 20px;
+}
+
+.c-socials__item {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+
+.c-socials__icon {
+  width: 35px;
+  height: 25px;
+  fill: #ffffff;
+}
+
+.c-socials__icon:hover {
+  fill: #004cd1;
+}

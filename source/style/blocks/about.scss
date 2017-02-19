@@ -1,0 +1,55 @@
+.l-about {
+  @extend %clearfix;
+  display:flex;
+}
+
+.l-about__col {
+  float: left;
+  width: 50%;
+  position: relative;
+
+  &_left {
+    background: $white;
+    flex-grow:1;
+    padding-bottom: 30px;
+
+
+    .c-about__triangle{
+      left: 0;
+      fill:$white;
+    }
+
+    .c-about__triangle_opacity {
+      fill: black;
+      fill-opacity: 0.5;
+    }
+
+
+
+
+  }
+
+  &_right{
+    background: $red;
+    flex-shrink:0;
+
+
+    .c-about__triangle{
+      right: 0;
+      fill: $red;
+    }
+    .c-about__triangle_opacity {
+      fill: black;
+      fill-opacity: 0.5;
+    }
+  }
+}
+
+.c-about__triangle {
+  display: block;
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  bottom: 100%;
+
+}

@@ -1,0 +1,26 @@
+.c-user {
+  text-align: center;
+  @include centred();
+
+  
+}
+
+.user-information__picture {
+  width: 147px;
+  height: 147px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.user-information__name {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 35px;
+}
+
+.user-information__site {
+  font-weight: 100;
+  color: #ffffff;
+}
