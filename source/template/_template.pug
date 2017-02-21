@@ -31,7 +31,7 @@ html
         c - component
 
     .wrapper
-        section.l-section.l-hero
+        section.l-section.l-hero.l-hero_mywork
 
 
             .c-hero__bg
@@ -57,108 +57,60 @@ html
 
 
         section.l-section.l-about
-            .l-about__col.l-about__col_left
-                svg(viewBox="0 0 1000 110" preserveAspectRatio="none").c-about__triangle.c-about__triangle_opacity
-                    polygon(points="0,0 0,110 1000,110")
+            .l-about__col.l-about__col_left.l-about__col_left_myworks
+                svg(viewBox="0 0 1000 680" preserveAspectRatio="none").c-about__triangle.c-about__triangle_opacity
+                    polygon(points="0,0 0,680 1000,680 1000,190")
 
-                .c-section-title(style="background-image: url('assets/img/blocks/stars2.png')") Обо мне
-                .c-about-me
-                    img(src="assets/img/blocks/user-image.jpg").c-about-me__pic
-                    .c-block-me__title Кто я
-                    .c-block-me__text Интересуют мнения людей которые бросили emmet(и аналоги) ... jade можно использовать Emmet для быстрого набора кода. ... Как сделать многострочный некомпилируемый текст в аттрибутах тега в pug (jade)?.Интересуют мнения людей которые бросили emmet(и аналоги) ... jade можно использовать Emmet для быстрого набора кода. ... Как сделать многострочный некомпилируемый текст в аттрибутах тега в pug (jade)?.Интересуют мнения людей которые бросили emmet(и аналоги) ... jade можно использовать Emmet для быстрого набора кода. ... Как сделать многострочный некомпилируемый текст в аттрибутах тега в pug (jade)?.
+                .c-section-title.c-section-title_mywork(style="background-image: url('assets/img/blocks/stars2.png')") Мои работы
+                .c-block-title Сайт-школы образования
+                .c-block-technologies HTML, CSS, JavaScript
+                a.c-block-button
+                    //svg.c-block-button__chain
+                    .c-block-button-chain__text Посетить сайт
 
             .l-about__col.l-about__col_right
-                svg(viewBox="0 0 1000 110" preserveAspectRatio="none").c-about__triangle.c-about__triangle_opacity
-                    polygon(points="0,110 1000,110 1000, 0")
-                .l-skills
-                    .l-skills__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                svg(viewBox="0 0 1000 680" preserveAspectRatio="none").c-about__triangle.c-about__triangle_opacity
+                    polygon(points="0,190 0,680 1000,680 1000,0")
+                .c-works
+                    img(src="assets/img/blocks/works.png").c-works__images
+                .c-switcher
+                    .c-switcher__darker
+                        .c-swithcher__up
+                            img(src="assets/img/blocks/up.png").c-switcher__bg
+                            .c-switcher__up-arrow
+                        .c-switcher__down
+                            img(src="assets/img/blocks/down.png").c-switcher__bg
+                            .c-switcher__up-arrow.c-switcher__up-arrow_reverce
 
-                    ul.c-skills-group
-                        li.c-skills-group__item
-                            .c-skills-group__title Frontend
-                            ul.c-skills-list
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title HTML 5
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title CSS3
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title JavaScript
 
-                        li.c-skills-group__item
-                            .c-skills-group__title Backend
-                            ul.c-skills-list
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title PHP
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title mySQL
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title Noda.js & npm
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title Mongo.db
-                        li.c-skills-group__item
-                            .c-skills-group__title WorkFlow
-                            ul.c-skills-list
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title Git
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title Gulp
-                                li.c-skills-list__item
-                                    .c-skill
-                                        svg.c-skill__circle
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-under
-                                            circle(cx="50" cy="50" r="40").c-skill__circle-above
-                                        .c-skill__title Bower
+        section.l-section.l-what-about
+            .c-block-what-about
+                .c-section-title.c-section-title_whatabout(style="background-image: url('assets/img/blocks/stars3.png')") Что говорят обо мне
+                .c-feetbacks
+                    .c-feetbacks__col
+                        img(src="assets/img/blocks/dima.png").c-feetbacks__photo
+                        .c-feetbacks__text lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                        .c-feetbacks__author loremloremloremlorem
+                        .c-feetbacks__author-description lorem lorem lorem
+                    .c-feetbacks__col
+                        img(src="assets/img/blocks/vova.png").c-feetbacks__photo
+                        .c-feetbacks__text lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                        .c-feetbacks__author loremloremloremlorem
+                        .c-feetbacks__author-description lorem lorem lorem
+                .c-contact-from
+                    .c-block-title Связаться со мной
+                    form.c-block-form
+                        input.c-block-form__name
+                        input.c-block-form__email
+                        input.c-block-form__message
+                        button.c-block-form__send
+                        button.c-block-form__clear
 
-        section.l-section.l-map
-            img(src="assets/img/blocks/map.png").l-map__bg
-            .c-contacts
-                .c-block-title Контакты
-                ul.c-contacts-items
-                    - var icons = ['skype', 'envelope', 'phone2', 'map_marker' ]
 
-                    each icon in icons
-                         li.c-contacts-item
-                             .c-contacts__cycle
-                                 svg.c-contacts-item__icon
-                                    use(xlink:href=`assets/img/sprites/sprite.svg#icons--icons_svg--${icon}`)
 
-                             .c-contacts-item__text loremloremlorem
+
+
+
 
             .l-footer-bg
 

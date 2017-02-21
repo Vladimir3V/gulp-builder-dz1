@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.l-hero_mywork {
+  height: 800px;
+}
+
 .c-hero__bg {
   top: 0;
   @include centred(x);
