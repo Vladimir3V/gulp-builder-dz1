@@ -1,15 +1,12 @@
 .l-footer{
   position: relative;
-
-  margin-top: -190px;
-
   height: 190px;
   width: 100%;
-
+  background: rgba(28, 31, 41, 0.85);
   color: #ffffff;
   z-index: 1;
-  opacity:;
 }
+
 
 .l-footer-main {
   height: 120px;
@@ -40,20 +37,12 @@
       top:50%;
       left: 0;
     }
-
   }
-
 }
 
 .l-footer-copyright {
   background: blue;
 }
 
-.l-footer_blog{
-  color: rgba(255, 255, 255, 0.5);
-  background: rgba(28, 31, 41, 0.85);
-  margin-top: 0;
-  z-index: 0;
-}
 
 
