@@ -8,16 +8,7 @@
 
   color: #ffffff;
   z-index: 1;
-}
-
-.l-footer-bg {
-
-  margin-top: -190px;
-
-  height: 190px;
-  width: 100%;
-  opacity: 0.5;
-  background-color: black;
+  opacity:;
 }
 
 .l-footer-main {
@@ -54,14 +45,15 @@
 
 }
 
-
-
-
 .l-footer-copyright {
-  text-align: center;
-  line-height: 40px;
-  height: 40px;
-  width: 100%;
   background: blue;
-  opacity: 0.5;
 }
+
+.l-footer_blog{
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(28, 31, 41, 0.85);
+  margin-top: 0;
+  z-index: 0;
+}
+
+

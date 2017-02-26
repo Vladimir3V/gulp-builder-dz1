@@ -1,9 +1,13 @@
 //colours
 
+$textcolor1: #ffffff;
 $white: #f2f0e8;
 $red: #f4f5f0;
 $fontcolor: #474b57;
 $tire: black;
+$cristal: rgba(28, 31, 41, 0.5);
+$buttoncolor: #1c3563;
+
 
 
 
@@ -36,4 +40,8 @@ ul {
   list-style: none outside none;
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }

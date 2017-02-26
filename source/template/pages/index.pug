@@ -1,7 +1,17 @@
-extends ../_template
+extends ../_welcomeAuthorizationTemplate
 
-block variables
-  - var title = 'Home page'
 
-block content
-  include ../common/_greating
+block welcome-authorization-header
+  .l-welcome-authorization-header
+    a(href='authorization.html').c-authorization-button Авторизация
+
+
+block central-block
+
+    .c-user.c-user-welcome
+      include ../blocks/user
+    include ../blocks/socials
+
+block welcome-authorization-footer
+  include ../blocks/copyright
+
